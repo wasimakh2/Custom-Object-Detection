@@ -36,7 +36,7 @@ A local training job can be run with the following command:
 # From the tensorflow/models/ directory
 python object_detection/train.py \
     --logtostderr \
-    --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} \
+    --pipeline_config_path=/path/to/pipeline.config \
     --train_dir=${PATH_TO_TRAIN_DIR}
 ```
 
@@ -56,7 +56,7 @@ job can be run using the following command:
 python object_detection/eval.py \
     --logtostderr \
     --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} \
-    --checkpoint_dir=${PATH_TO_TRAIN_DIR} \
+    --checkpoint_dir=/path/to/train/directory \
     --eval_dir=${PATH_TO_EVAL_DIR}
 ```
 
