@@ -290,8 +290,8 @@ The following example demonstrates how to train Inception V3 using the default
 parameters on the ImageNet dataset.
 
 ```shell
-DATASET_DIR=/tmp/imagenet
-TRAIN_DIR=/tmp/train_logs
+DATASET_DIR=<actual_dataset_path>
+TRAIN_DIR=<actual_train_path>
 python train_image_classifier.py \
     --train_dir=${TRAIN_DIR} \
     --dataset_name=imagenet \
@@ -313,7 +313,7 @@ To visualize the losses and other metrics during training, you can use
 by running the command below.
 
 ```shell
-tensorboard --logdir=${TRAIN_DIR}
+tensorboard --logdir=<actual_train_path>
 ```
 
 Once TensorBoard is running, navigate your web browser to http://localhost:6006.

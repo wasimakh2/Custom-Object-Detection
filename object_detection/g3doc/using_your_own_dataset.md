@@ -93,6 +93,9 @@ A typical conversion script will look like the following:
 ```python
 
 import tensorflow as tf
+import os
+import io
+from PIL import Image
 
 from object_detection.utils import dataset_util
 
