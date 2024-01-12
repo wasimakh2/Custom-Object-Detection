@@ -313,7 +313,7 @@ To visualize the losses and other metrics during training, you can use
 by running the command below.
 
 ```shell
-tensorboard --logdir=${TRAIN_DIR}
+tensorboard --logdir=<actual_train_path>
 ```
 
 Once TensorBoard is running, navigate your web browser to http://localhost:6006.
