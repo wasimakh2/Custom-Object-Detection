@@ -3,3 +3,4 @@ pillow
 lxml
 jupyter
 matplotlib
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
